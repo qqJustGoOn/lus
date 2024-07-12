@@ -301,7 +301,7 @@ input, select {
 }
 @media (max-width: 768px) {
   .buy-button__price {
-    padding-inline: 82px;
+    padding-inline: 81px;
   }
 }
 @media (max-width: 576px) {

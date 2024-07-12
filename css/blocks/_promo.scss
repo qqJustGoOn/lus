@@ -1,0 +1,41 @@
+.promo {
+  &__body {
+    min-height: 500px;
+    background-image: url("../images/promo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    position: relative;
+
+    @include tablet-s {
+      min-height: 300px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(
+      180deg,
+      #bc10d8 0%,
+      rgba(80, 0, 250, 0.93) 100%
+    );
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+    transition: transform 0.3s ease-in-out;
+
+    @include hover {
+      transform: scale(1.1) translateX(-50%);
+    }
+  }
+}

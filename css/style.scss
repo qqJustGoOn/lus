@@ -1,0 +1,97 @@
+@import "reset", "variables", "mixins", "media", "blocks/header", "blocks/hero",
+  "blocks/buy-button", "blocks/features", "blocks/tabs", "blocks/games",
+  "blocks/buy", "blocks/equipment", "blocks/promo", "blocks/accessories",
+  "blocks/accessories-card", "blocks/subscription", "blocks/subscribe-form",
+  "blocks/footer", "blocks/soc1als-list";
+
+@font-face {
+  font-family: "Helvetica", sans-serif;
+  src: url(../fonts/helvetica.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica-Bold", sans-serif;
+  src: url(../fonts/helvetica-bold.woff2);
+  font-style: normal;
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  fill: currentColor;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--grey);
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.section__container {
+  padding-top: 100px;
+
+  @include tablet {
+    padding-top: 80px;
+  }
+
+  @include tablet-s {
+    padding-top: 60px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+  }
+}
+
+.section-title {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

@@ -1,0 +1,114 @@
+.tabs {
+  display: grid;
+  grid-template-columns: 300px auto;
+
+  @include tablet {
+    display: block;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+    transition: color 0.3s ease-in-out;
+
+    @include tablet {
+      display: block;
+      column-count: 2;
+      margin-bottom: 10px;
+    }
+
+    @include mobile-s {
+      column-count: 1;
+    }
+
+    &-item {
+      font-weight: 700;
+
+      @include tablet {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      @include hover {
+        color: var(--black);
+      }
+
+      &--active {
+        color: var(--black);
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    min-height: 300px;
+
+    &-item {
+      display: grid;
+      grid-template-columns: auto 280px;
+      grid-template-rows: auto 150px;
+      column-gap: 40px;
+      row-gap: 20px;
+      opacity: 0;
+      position: absolute;
+      transition: opacity 0.3s ease-in-out;
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        position: relative;
+      }
+
+      &--active {
+        height: auto;
+        opacity: 1;
+      }
+    }
+
+    &-image {
+      grid-row: 1 / -1;
+      object-fit: cover;
+    }
+  }
+
+  &__content-box {
+    line-height: 1.2;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__video {
+    grid-column: 2 /3;
+    width: 280px;
+    height: 150px;
+    background-image: url(../images/features-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 9px 10px;
+
+    @include mobile {
+      width: auto;
+      height: 220px;
+    }
+
+    &-button {
+      margin-left: 22px;
+    }
+
+    span {
+      font-size: 13px;
+      color: var(--white);
+    }
+  }
+}

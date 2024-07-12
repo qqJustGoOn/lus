@@ -1,0 +1,40 @@
+.subscribe-form {
+  margin-bottom: 10px;
+  position: relative;
+
+  &__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-grey);
+    padding: 22px 60px 22px 0;
+    font-size: 16px;
+
+    &::placeholder {
+      font-family: "Helvetica", sans-serif;
+      font-weight: 400px;
+      font-size: 13px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    aspect-ratio: 1;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: var(--light-grey);
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    @include hover {
+      color: var(--white);
+      background-color: var(--grey);
+    }
+  }
+}

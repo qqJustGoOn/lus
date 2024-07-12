@@ -1,0 +1,43 @@
+.subscription {
+  &__header {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black);
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+
+    @include tablet-s {
+      flex-direction: column;
+      align-items: start;
+      row-gap: 20px;
+    }
+  }
+
+  &__form {
+    flex-basis: 600px;
+
+    @include tablet-s {
+      flex-basis: auto;
+    }
+  }
+
+  &__policy {
+    font-size: 13px;
+  }
+
+  &__email {
+    transition: color 0.3s ease-in-out;
+    @include hover {
+      color: var(--black);
+    }
+  }
+}

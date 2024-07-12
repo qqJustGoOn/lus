@@ -1,0 +1,52 @@
+.buy {
+  position: relative;
+  text-align: center;
+  overflow-x: hidden;
+
+  &__bg {
+    @include fluid-text(400, 360);
+    position: absolute;
+    z-index: -1;
+    font-weight: 700;
+    // font-size: 400px;
+
+    line-height: 1;
+    opacity: 0.1;
+    text-transform: uppercase;
+    left: 50%;
+    bottom: 62px;
+    transform: translateX(-50%);
+    animation: line-text 6s linear infinite;
+
+    @include gradientText;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__image {
+    display: inline-block;
+    margin-bottom: 30px;
+
+    @include tablet {
+      width: 320px;
+      height: 310px;
+    }
+  }
+
+  .buy-button {
+    margin-inline: auto;
+  }
+}
+
+@keyframes line-text {
+  0% {
+    transform: translateX(130%);
+    transform-origin: left center;
+  }
+  100% {
+    transform: translateX(-200%);
+    transform-origin: right center;
+  }
+}

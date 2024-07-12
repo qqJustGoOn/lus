@@ -1,0 +1,52 @@
+.equipment {
+  &__header {
+    margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+
+    @include tablet {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item--one {
+      grid-row: 1 / -1;
+    }
+
+    &-item--order {
+      @include mobile {
+        order: -1;
+      }
+    }
+
+    &-image {
+      margin-bottom: 10px;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    &-subtitle {
+      @include fluid-text(36, 26);
+      font-weight: 400;
+      text-transform: uppercase;
+      @include gradientText;
+    }
+  }
+}

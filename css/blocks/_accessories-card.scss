@@ -1,0 +1,60 @@
+.accessories-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  @include gradientBg;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 42px;
+  }
+
+  &__image {
+    align-self: center;
+  }
+
+  &__name {
+    font-weight: 400;
+    @include fluid-text(24, 20);
+    color: var(--black);
+    margin-bottom: 10px;
+    min-height: 58px;
+  }
+
+  &__descr {
+    margin-top: auto;
+  }
+
+  &__body {
+    margin-top: auto;
+  }
+
+  &__price {
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, background-color 0.3s linear;
+
+    @include gradientBg;
+    @include gradientText;
+
+    @include hover {
+      -webkit-text-fill-color: var(--white);
+      background: linear-gradient(
+        180deg,
+        #bc10d8 0%,
+        rgba(80, 0, 250, 0.93) 100%
+      );
+    }
+  }
+}

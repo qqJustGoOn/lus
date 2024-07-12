@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Oculus</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <button class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav__menu-list">
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Shop</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Games</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Metaverse</a>
+            </li>
+          </ul>
+          <a class="nav__logo">
+            <img
+              src="./images/logo.svg"
+              alt="Logo"
+              width="235"
+              height="42"
+              loading="lazy"
+            />
+          </a>
+          <a href="#" class="nav__cart nav__cart--on">
+            <img src="./images/cart.svg" alt="Cart" loading="lazy" />
+            <span>12</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__body">
+            <h1 class="hero__title">Meta Quest 2</h1>
+            <p class="hero__subtitle">Get an Elite Strap free</p>
+            <p class="hero__descr">
+              For a limited time only, save $59.99 USD. Offer ends 1/19/23
+            </p>
+            <button class="buy-button">
+              <span class="buy-button__text">Buy Now</span>
+              <span class="buy-button__price">399,99 USD</span>
+            </button>
+            <p class="buy__text">Meta Quest 2 is for ages 13+</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section__container">
+        <div class="container">
+          <div class="features__header">
+            <h2 class="features__title section-title">Product Features</h2>
+            <p class="features__subtitle">Easy to set up and safe to use</p>
+          </div>
+          <div class="features__tabs tabs">
+            <div class="tabs__button">
+              <button
+                class="tabs__button-item tabs__button-item--active"
+                data-button="content-1"
+              >
+                01 Graphics
+              </button>
+              <button class="tabs__button-item" data-button="content-2">
+                02 Controls
+              </button>
+              <button class="tabs__button-item" data-button="content-3">
+                03 Processor
+              </button>
+              <button class="tabs__button-item" data-button="content-4">
+                04 Set up your play area
+              </button>
+              <button class="tabs__button-item" data-button="content-5">
+                05 Gardian activity
+              </button>
+              <button class="tabs__button-item" data-button="content-6">
+                06 Headset casting
+              </button>
+            </div>
+            <div class="tabs__content">
+              <div
+                class="tabs__content-item tabs__content-item--active"
+                id="content-1"
+              >
+                <img
+                  class="tabs__content-image"
+                  src="./images/features.jpg"
+                  alt="Graphics Content"
+                  width="580"
+                  height="300"
+                  loading="lazy"
+                />
+                <div class="tabs__content-box">
+                  <h3>Graphics</h3>
+                  <p>
+                    With 1832 x 1920 pixels per eye, everything from multiplayer
+                    games and productivity apps to 360 0 videos look beyond
+                    incredible
+                  </p>
+                </div>
+                <div class="tabs__video video">
+                  <button class="tabs__video-button">
+                    <img
+                      src="./images/play.svg"
+                      alt="Play video"
+                      loading="lazy"
+                    />
+                  </button>
+                  <span>Watch the video</span>
+                </div>
+              </div>
+              <div class="tabs__content-item" id="content-2">
+                <img
+                  class="tabs__content-image"
+                  src="./images/features_2.jpg"
+                  alt="Controls content"
+                  width="580"
+                  height="300"
+                  loading="lazy"
+                />
+                <div class="tabs__content-box">
+                  <h3>Controls</h3>
+                  <p>
+                    With 1832 x 1920 pixels per eye, everything from multiplayer
+                    games and productivity apps to 360 0 videos look beyond
+                    incredible
+                  </p>
+                </div>
+                <div class="tabs__video video">
+                  <button class="tabs__video-button">
+                    <img
+                      src="./images/play.svg"
+                      alt="Play video"
+                      loading="lazy"
+                    />
+                  </button>
+                  <span>Watch the video</span>
+                </div>
+              </div>
+              <div class="tabs__content-item" id="content-3">
+                <img
+                  class="tabs__content-image"
+                  src="./images/features_3.jpg"
+                  alt="Processor content"
+                  width="580"
+                  height="300"
+                  loading="lazy"
+                />
+                <div class="tabs__content-box">
+                  <h3>Processor</h3>
+                  <p>
+                    With 1832 x 1920 pixels per eye, everything from multiplayer
+                    games and productivity apps to 360 0 videos look beyond
+                    incredible
+                  </p>
+                </div>
+                <div class="tabs__video video">
+                  <button class="tabs__video-button">
+                    <img
+                      src="./images/play.svg"
+                      alt="Play video"
+                      loading="lazy"
+                    />
+                  </button>
+                  <span>Watch the video</span>
+                </div>
+              </div>
+              <div class="tabs__content-item" id="content-4">
+                <img
+                  class="tabs__content-image"
+                  src="./images/features_4.jpg"
+                  alt="Play Area Content"
+                  width="580"
+                  height="300"
+                  loading="lazy"
+                />
+                <div class="tabs__content-box">
+                  <h3>Set up your play area</h3>
+                  <p>
+                    With 1832 x 1920 pixels per eye, everything from multiplayer
+                    games and productivity apps to 360 0 videos look beyond
+                    incredible
+                  </p>
+                </div>
+                <div class="tabs__video video">
+                  <button class="tabs__video-button">
+                    <img
+                      src="./images/play.svg"
+                      alt="Play video"
+                      loading="lazy"
+                    />
+                  </button>
+                  <span>Watch the video</span>
+                </div>
+              </div>
+              <div class="tabs__content-item" id="content-5">
+                <img
+                  class="tabs__content-image"
+                  src="./images/features_5.jpg"
+                  alt="Gardian Activity Content"
+                  width="580"
+                  height="300"
+                  loading="lazy"
+                />
+                <div class="tabs__content-box">
+                  <h3>Gardian activity</h3>
+                  <p>
+                    With 1832 x 1920 pixels per eye, everything from multiplayer
+                    games and productivity apps to 360 0 videos look beyond
+                    incredible
+                  </p>
+                </div>
+                <div class="tabs__video video">
+                  <button class="tabs__video-button">
+                    <img
+                      src="./images/play.svg"
+                      alt="Play video"
+                      loading="lazy"
+                    />
+                  </button>
+                  <span>Watch the video</span>
+                </div>
+              </div>
+              <div class="tabs__content-item" id="content-6">
+                <img
+                  class="tabs__content-image"
+                  src="./images/features_6.jpg"
+                  alt="Headset Casting Content"
+                  width="580"
+                  height="300"
+                  loading="lazy"
+                />
+                <div class="tabs__content-box">
+                  <h3>Headset casting</h3>
+                  <p>
+                    With 1832 x 1920 pixels per eye, everything from multiplayer
+                    games and productivity apps to 360 0 videos look beyond
+                    incredible
+                  </p>
+                </div>
+                <div class="tabs__video video">
+                  <button class="tabs__video-button">
+                    <img
+                      src="./images/play.svg"
+                      alt="Play video"
+                      loading="lazy"
+                    />
+                  </button>
+                  <span>Watch the video</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="games section__container">
+        <div class="container">
+          <div class="games__header">
+            <h2 class="games__title section-title">Games</h2>
+          </div>
+          <div class="games__body">
+            <div class="games__descr">
+              <p class="games__descr-subtitle">It`s all fun and games</p>
+              <p class="games__descr-text">
+                Discover new adventures, master epic challenges or revisit
+                classic moments in your favourite games and experiences
+              </p>
+              <a href="#" class="games__descr-link">See All Games</a>
+            </div>
+            <div class="games__item">
+              <img
+                src="./images/game-1.jpg"
+                alt="Photo Game 1"
+                class="games__item-image"
+                width="260"
+                height="280"
+                loading="lazy"
+              />
+              <h3 class="games__item-title">Blade &amp; Sorcery: Nomad</h3>
+              <p class="games__item-descr">
+                Step into a medieval fantasy sandbox that uses phisics to serve
+                up some of the most realistic combat in VR
+              </p>
+              <a href="#" class="games__item-link">See More</a>
+            </div>
+            <div class="games__item">
+              <img
+                src="./images/game-2.jpg"
+                alt="Photo Game 2"
+                class="games__item-image"
+                width="260"
+                height="280"
+                loading="lazy"
+              />
+              <h3 class="games__item-title">Population: One</h3>
+              <p class="games__item-descr">
+                Climb anything. Fight everywhere. Experience battle royale only
+                possible in VR
+              </p>
+              <a href="#" class="games__item-link">See More</a>
+            </div>
+            <div class="games__item">
+              <img
+                src="./images/game-3.jpg"
+                alt="Photo Game 3"
+                class="games__item-image"
+                width="260"
+                height="280"
+                loading="lazy"
+              />
+              <h3 class="games__item-title">Supernatural</h3>
+              <p class="games__item-descr">
+                Box, Flow, Meditate and Stretch with real coaches in stunning
+                destinations from around the world. Enjoy new workouts every
+                day.
+              </p>
+              <a href="#" class="games__item-link">See More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="buy section__container">
+        <h2 class="visually-hidden">Buy Virtual Glasses</h2>
+        <p class="buy__bg">Oculus</p>
+        <div class="buy__container container">
+          <img
+            class="buy__image"
+            src="./images/oculus.png"
+            alt="Oculus Glasses"
+            width="347"
+            height="334"
+            loading="lazy"
+          />
+          <button class="buy-button">
+            <span class="buy-button__text">Buy Now</span>
+            <span class="buy-button__price">399,99 USD</span>
+          </button>
+          <p class="buy__text">Meta Quest 2 is for ages 13+</p>
+        </div>
+      </article>
+      <section class="equipment section__container">
+        <div class="container">
+          <div class="equipment__header">
+            <h2 class="equipment__title section-title">In The Box</h2>
+          </div>
+          <div class="equipment__body">
+            <div class="equipment__body-item equipment__body-item--one">
+              <img
+                class="equipment__body-image"
+                alt="Glasses"
+                src="./images/eq-1.jpg"
+                loading="lazy"
+              />
+              <p class="equipment__body-text">VR Headset</p>
+            </div>
+            <div class="equipment__body-item">
+              <img
+                class="equipment__body-image"
+                alt="Glasses"
+                src="./images/eq-2.jpg"
+                width="280"
+                height="220"
+                loading="lazy"
+              />
+              <p class="equipment__body-text">
+                Two Touch Controllers &amp; AA Batteries
+              </p>
+            </div>
+            <div class="equipment__body-item equipment__body-item--order">
+              <p class="equipment__body-subtitle">What's included</p>
+            </div>
+            <div class="equipment__body-item">
+              <img
+                class="equipment__body-image"
+                alt="Glasses"
+                src="./images/eq-3.jpg"
+                width="280"
+                height="220"
+                loading="lazy"
+              />
+              <p class="equipment__body-text">
+                Charging Cable &amp; Power Adapter
+              </p>
+            </div>
+            <div class="equipment__body-item">
+              <img
+                class="equipment__body-image"
+                alt="Glasses"
+                src="./images/eq-4.jpg"
+                width="280"
+                height="220"
+                loading="lazy"
+              />
+              <p class="equipment__body-text">Glasses Spacer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="promo section__container">
+        <h2 class="visually-hidden">Promo Metaverse</h2>
+        <div class="container">
+          <div class="promo__body">
+            <button class="promo__button">Go</button>
+          </div>
+        </div>
+      </article>
+
+      <section class="accessories section__container">
+        <div class="container">
+          <div class="accessories__header">
+            <h2 class="accessories__title section-title">Accessories</h2>
+            <p class="accessories__subtitle">Personalize Every Experience</p>
+          </div>
+          <div class="accessories__body">
+            <article class="accessories-card">
+              <header class="accessories-card__header">
+                <img
+                  class="accessories-card__image"
+                  src="./images/access-1.png"
+                  alt=""
+                  width="260"
+                  height="280"
+                  loading="lazy"
+                />
+                <div class="acceessories-card__info">
+                  <h3 class="accessories-card__name">
+                    Meta Quest 2 Carrying Case
+                  </h3>
+                  <p class="accessories-card__descr">
+                    Protect your system-at home or away.
+                  </p>
+                </div>
+              </header>
+              <div class="accessories-card__body">
+                <p class="accessories-card__price">$59.99 USD</p>
+                <button type="button" class="accessories-card__button">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+            <article class="accessories-card">
+              <header class="accessories-card__header">
+                <img
+                  class="accessories-card__image"
+                  src="./images/access-2.png"
+                  alt=""
+                  width="260"
+                  height="280"
+                  loading="lazy"
+                />
+                <div class="acceessories-card__info">
+                  <h3 class="accessories-card__name">Link Cable</h3>
+                  <p class="accessories-card__descr">
+                    Harness the power of your PC with this premium fiber-optic
+                    cable.
+                  </p>
+                </div>
+              </header>
+              <div class="accessories-card__body">
+                <p class="accessories-card__price">$79.99 USD</p>
+                <button type="button" class="accessories-card__button">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+            <article class="accessories-card">
+              <header class="accessories-card__header">
+                <img
+                  class="accessories-card__image"
+                  src="./images/access-3.png"
+                  alt=""
+                  width="260"
+                  height="280"
+                  loading="lazy"
+                />
+                <div class="acceessories-card__info">
+                  <h3 class="accessories-card__name">
+                    Meta Quest 2 Active Pack
+                  </h3>
+                  <p class="accessories-card__descr">
+                    A wipeable facial interface, wrist straps, and knuckle
+                    straps.
+                  </p>
+                </div>
+              </header>
+              <div class="accessories-card__body">
+                <p class="accessories-card__price">$69.99 USD</p>
+                <button type="button" class="accessories-card__button">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+            <article class="accessories-card">
+              <header class="accessories-card__header">
+                <img
+                  class="accessories-card__image"
+                  src="./images/access-4.png"
+                  alt=""
+                  width="260"
+                  height="280"
+                  loading="lazy"
+                />
+                <div class="acceessories-card__info">
+                  <h3 class="accessories-card__name">Meta Quest Gift Cards</h3>
+                  <p class="accessories-card__descr">
+                    Redeemable on 350+ games and apps.
+                  </p>
+                </div>
+              </header>
+              <div class="accessories-card__body">
+                <p class="accessories-card__price">$15.50 USD</p>
+                <button type="button" class="accessories-card__button">
+                  Buy Now
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscription section__container">
+        <div class="container">
+          <div class="subscription__header">
+            <h2 class="subscription__title">Get news and updates</h2>
+          </div>
+          <div class="subscription__body">
+            <div class="subscription__form">
+              <form class="subscribe-form">
+                <h2 class="visually-hidden">Subscription</h2>
+                <input
+                  class="subscribe-form__input"
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                />
+                <button class="subscribe-form__button" type="submit">Go</button>
+              </form>
+              <p class="subscription__policy">
+                By signing up you agree to receive updates and marketing
+                messages (e.g. email, social, etc.) from Meta about Meta`s
+                existing and future products and services.
+              </p>
+              <p class="subscription__policy">
+                You may withdraw your consent and unsubscribe at any time by
+                clicking the unsubscribe link included in our messages.
+              </p>
+              <p class="subscription__policy">
+                Your subscription is subject to the Terms and Privacy Policy.
+              </p>
+            </div>
+            <a href="mailto:oculusshop@gmail.com" class="subscription__email"
+              >oculusshop@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__menu-list footer__menu-list">
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Shop</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Games</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Metaverse</a>
+            </li>
+            <li class="nav__menu-item">
+              <a href="#" class="nav__menu-link">Contact Us</a>
+            </li>
+          </ul>
+          <a href="#" class="nav__logo">
+            <img
+              src="./images/logo.svg"
+              alt="Logo"
+              width="235"
+              height="42"
+              loading="lazy"
+            />
+          </a>
+          <ul class="soc1als-list">
+            <li class="soc1als-item">
+              <a href="#" class="soc1als-link">
+                <span class="visually-hidden">YouTube</span>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5047 14.7391L13.9953 13.1016C13.6891 12.9594 13.4375 13.1187 13.4375 13.4578V16.5422C13.4375 16.8813 13.6891 17.0406 13.9953 16.8984L17.5031 15.2609C17.8109 15.1172 17.8109 14.8828 17.5047 14.7391ZM15 0C6.71562 0 0 6.71562 0 15C0 23.2844 6.71562 30 15 30C23.2844 30 30 23.2844 30 15C30 6.71562 23.2844 0 15 0ZM15 21.0938C7.32188 21.0938 7.1875 20.4016 7.1875 15C7.1875 9.59844 7.32188 8.90625 15 8.90625C22.6781 8.90625 22.8125 9.59844 22.8125 15C22.8125 20.4016 22.6781 21.0938 15 21.0938Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="soc1als-item">
+              <a href="#" class="soc1als-link">
+                <span class="visually-hidden">Facebook</span>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 0C6.7155 0 0 6.75638 0 15.0913C0 22.6234 5.4855 28.8666 12.657 30V19.4527H8.847V15.0913H12.657V11.7667C12.657 7.98481 14.895 5.89617 18.3225 5.89617C19.9635 5.89617 21.6795 6.19045 21.6795 6.19045V9.90291H19.7895C17.925 9.90291 17.3445 11.0665 17.3445 12.2602V15.0913H21.504L20.8395 19.4527H17.3445V30C24.5145 28.8682 30 22.6219 30 15.0913C30 6.75638 23.2845 0 15 0Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="soc1als-item">
+              <a href="#" class="soc1als-link">
+                <span class="visually-hidden">Instagram</span>
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 0C6.66667 0 0 6.66667 0 15C0 23.3333 6.66667 30 15 30C23.3333 30 30 23.3333 30 15C30 6.66667 23.3333 0 15 0ZM15 11.6667C16.8333 11.6667 18.3333 13.1667 18.3333 15C18.3333 16.8333 16.8333 18.3333 15 18.3333C13.1667 18.3333 11.6667 16.8333 11.6667 15C11.6667 13.1667 13.1667 11.6667 15 11.6667ZM19.6667 8.33333C19.6667 7.16667 20.6667 6.33333 21.6667 6.33333C22.6667 6.33333 23.6667 7.33333 23.6667 8.33333C23.6667 9.33333 22.8333 10.3333 21.6667 10.3333C20.5 10.3333 19.6667 9.5 19.6667 8.33333ZM15 26.6667C8.5 26.6667 3.33333 21.5 3.33333 15H8.33333C8.33333 18.6667 11.3333 21.6667 15 21.6667C18.6667 21.6667 21.6667 18.6667 21.6667 15H26.6667C26.6667 21.5 21.5 26.6667 15 26.6667Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

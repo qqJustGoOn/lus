@@ -1,0 +1,39 @@
+.accessories {
+  &__header {
+    margin-bottom: 30px;
+
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: 30px;
+
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__subtitle {
+    @include fluid-text(36, 26);
+    text-transform: uppercase;
+    @include gradientText;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 20px;
+    }
+  }
+}

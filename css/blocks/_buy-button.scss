@@ -1,0 +1,51 @@
+.buy-button {
+  display: flex;
+  padding: 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  @include fluid-text(16, 14);
+
+  @include gradientBg;
+
+  @include mobile {
+    flex-direction: column;
+    margin-inline: auto;
+  }
+
+  &__text {
+    color: var(--white);
+    padding: 20px 111px;
+    background: linear-gradient(
+      180deg,
+      #bc10d8 0%,
+      rgba(80, 0, 250, 0.93) 100%
+    );
+
+    @include tablet-s {
+      padding-inline: 88px;
+    }
+
+    @include mobile {
+      padding-block: 12px;
+    }
+  }
+
+  &__price {
+    padding: 20px 106px;
+    color: var(--grey);
+
+    @include tablet-s {
+      padding-inline: 82px;
+    }
+
+    @include mobile {
+      padding-block: 12px;
+    }
+  }
+}
+
+.buy__text {
+  padding-top: 10px;
+  font-size: 13px;
+}

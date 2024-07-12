@@ -1,0 +1,15 @@
+.soc1als {
+  &-list {
+    display: flex;
+    justify-self: end;
+    column-gap: 20px;
+  }
+
+  &-link {
+    transition: color 0.3s ease-in-out;
+
+    @include hover {
+      color: var(--black);
+    }
+  }
+}

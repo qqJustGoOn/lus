@@ -1,0 +1,94 @@
+.games {
+  &__header {
+    margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 20px;
+    }
+  }
+
+  &__descr {
+    padding-right: 10px;
+
+    &-subtitle {
+      @include fluid-text(36, 26);
+      line-height: 1.2;
+      text-transform: uppercase;
+      @include gradientText;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      margin-bottom: 30px;
+    }
+
+    &-link {
+      display: inline-block;
+      padding: 16px 47px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      transition: color 0.3s ease-in-out, background-color 0.3s linear;
+      @include gradientBg;
+      @include gradientText;
+
+      @include hover {
+        -webkit-text-fill-color: var(--white);
+        background: linear-gradient(
+          180deg,
+          #bc10d8 0%,
+          rgba(80, 0, 250, 0.93) 100%
+        );
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px 16px;
+    @include gradientBg;
+
+    &-image {
+      align-self: center;
+      object-fit: cover;
+    }
+
+    &-title {
+      color: var(--black);
+      @include fluid-text(24, 20);
+      font-weight: 400;
+    }
+
+    &-descr {
+      margin-bottom: 20px;
+    }
+
+    &-link {
+      margin-top: auto;
+      text-transform: lowercase;
+      transition: color 0.3s ease-in-out;
+      @include gradientText;
+
+      @include hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}
